@@ -2,13 +2,14 @@ body {
 	color: #fff;
 	background: #204d5e;
 }
-.navbar-github {
-  transform: translateX(-50%) translateY(-50%);
-  left: 50%;
-  position: absolute;
 
-  border-radius: 50%;
+.navbar-github {
+	transform: translateX(-50%) translateY(-50%);
+	left: 50%;
+	position: absolute;
+	border-radius: 50%;
 }
+
 .form-control {
 	min-height: 41px;
 	background: #fff;
@@ -102,25 +103,36 @@ body {
 	text-decoration: underline;
 }
 
-
 @-webkit-keyframes animatetop {
-  from {top:-300px; opacity:0}
-  to {top:75px; opacity:1}
+	from {
+		top: -300px;
+		opacity: 0
+	}
+	to {
+		top: 75px;
+		opacity: 1
+	}
 }
 
 @keyframes animatetop {
-  from {top:-300px; opacity:0}
-  to {top:75px; opacity:1}
+	from {
+		top: -300px;
+		opacity: 0
+	}
+	to {
+		top: 75px;
+		opacity: 1
+	}
 }
+
 #register-form {
 	display: none;
 	position: fixed;
 	left: 50%;
 	top: 75px;
-
 	transform: translateX(-50%);
 	-webkit-animation-name: animatetop;
-  -webkit-animation-duration: 1.5s;
-  animation-name: animatetop;
-  animation-duration: 1.5s
+	-webkit-animation-duration: 1.5s;
+	animation-name: animatetop;
+	animation-duration: 1.5s
 }
