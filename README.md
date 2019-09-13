@@ -6,7 +6,7 @@ CWS is an application I designed to communicate with a web server I hosted on an
 
 ## Plans?
 
-I don't like setting a set "plan" for a program, because many things change between the start of development to the end of it. With that being said, I will provide a lose description of where I want to go with this program:
+I don't like setting a set "plan" for a program, because many things change between the start of development to the end of it. With that being said, I will provide a loose description of where I want to go with this program:
 
 * Fully functional file system. I designed my original application to access static youtube videos, json files, and txt files. What I hope to do is to implement some system of viewing certain files (.pdf, etc) and the one's that aren't supported you can just download.
 
