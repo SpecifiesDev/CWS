@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Computer Web Server</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script>window.$ = window.jQuery = require('jquery');</script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <link rel = "stylesheet" href = "./assets/sheets/login.css">
+   </head>
+   <body onkeypress = "(handleKeyPress(this, event))">
+      <script src = "./assets/js/loginHandler.js"></script>
+      <nav class="navbar navbar-dark bg-dark">
+         <ul class = "navbar-nav ml-auto">
+            <svg id="exitButton" height="16" width="16">
+               <circle cx="8"cy="8" r="8" stroke-color="red" width='3' fill="red" />
+            </svg>
+         </ul>
+      </nav>
+      <div class="login-form" id = "register-form">
+         <form>
+            <div class="avatar">
+               <img src="./assets/images/register.png" alt="Avatar">
+            </div>
+            <h2 class="text-center">Register</h2>
+            <div class="form-group">
+               <input type="text" class="form-control" name="email" placeholder="Email" required="required" id = "register-email">
+            </div>
+            <div class="form-group">
+               <input type="text" class="form-control" name="username" placeholder="Username" required="required" id = "register-username">
+            </div>
+            <div class="form-group">
+               <input type="password" class="form-control" name="password" placeholder="Password" required="required" id = "register-password">
+            </div>
+            <div class="form-group">
+               <input type="password" class="form-control" name="confirm" placeholder="Confirm" required="required" id = "register-confirm">
+            </div>
+            <div class="form-group">
+               <button type="submit" class="btn btn-primary btn-lg btn-block" id = "register-close">Close</button>
+               <button type="submit" class="btn btn-primary btn-lg btn-block" id = "register-confirm-btn">Confirm</button>
+            </div>
+         </form>
+      </div>
+      <div style = "padding-top: 5px; padding-left: 10px; padding-right: 10px;">
+         <div class="alert alert-danger alert-dismissible fade show" id = "alertDiv" role="alert">
+            <strong id = "alertStrong">Oops!</strong> <span id = "alertSpan"> %err_alert_main_login% </span>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+         </div>
+      </div>
+      <script> $("#alertDiv").hide(); </script>
+      <div class="login-form" id = "login-form">
+         <form>
+            <div class="avatar">
+               <img src="./assets/images/member.png" alt="Avatar">
+            </div>
+            <h2 class="text-center">User Login</h2>
+            <div class="form-group">
+               <input type="text" class="form-control" name="username" placeholder="Username" required="required">
+            </div>
+            <div class="form-group">
+               <input type="password" class="form-control" name="password" placeholder="Password" required="required">
+            </div>
+            <div class="form-group">
+               <button type="submit" class="btn btn-primary btn-lg btn-block" id = "Sign-in">Sign in</button>
+            </div>
+            <div class="clearfix">
+               <a href="#" class="float-right">Forgot Password?</a>
+            </div>
+         </form>
+         <p class="text-center small">Don't have an account? <a href="#" id = "signupClick">Sign up here!</a></p>
+      </div>
+      <footer id="sticky-footer" class="navbar fixed-bottom py-4 bg-dark text-white-50">
+         <a href = "#" id = "github-footer"><img src = "./assets/images/github.jpg" width = "25" height = "25" class = "navbar-github"></img></a>
+      </footer>
+   </body>
+</html>
