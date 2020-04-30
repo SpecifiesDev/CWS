@@ -13,7 +13,7 @@
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "express": "^4.17.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "jsencrypt": "^3.0.0-rc.1",
     "node-jsencrypt": "^1.0.0",
     "node-rsa": "^1.0.5",
